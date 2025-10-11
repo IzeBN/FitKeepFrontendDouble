@@ -1,0 +1,39 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #efedee;
+  border-radius: 30px;
+  padding: 34px 20px;
+  transition: 0.25s ease opacity;
+  cursor: pointer;
+  &:active {
+    opacity: 0.6;
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+  &__arrow {
+    min-width: 9px;
+  }
+  &__img {
+    min-width: 74px;
+    width: 74px;
+    margin-right: 6px;
+  }
+  &__content {
+    margin: 0 7px;
+  }
+  &__title {
+    font-weight: 600;
+    color: #1c1c1e;
+    font-size: 17px;
+    margin-bottom: 2px;
+  }
+  &__text {
+    color: #362f41;
+    font-size: 15px;
+    padding-right: 8px;
+  }
+}

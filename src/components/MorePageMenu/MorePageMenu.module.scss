@@ -1,0 +1,33 @@
+.root {
+  list-style: none;
+  padding-left: 0;
+  &__icon {
+    width: 30px;
+    display: inline-block;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.25s ease opacity;
+    padding: 31px 22px;
+    user-select: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:active {
+      opacity: 0.4;
+    }
+  }
+  li {
+    border-bottom: 1px solid #0000001f;
+    font-size: 16px;
+    font-weight: 400;
+    color: #362f41;
+  }
+  &__item_disabled { 
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}

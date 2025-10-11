@@ -1,0 +1,22 @@
+.root {
+  background-color: #01bb16;
+  border-radius: 30px;
+  font-size: 17px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 28px 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100px);
+  opacity: 0.95;
+  top: 10px;
+  transition: 0.25s ease all;
+  opacity: 0;
+  svg {
+    margin-right: 8px;
+  }
+}

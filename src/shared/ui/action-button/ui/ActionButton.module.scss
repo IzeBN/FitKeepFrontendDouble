@@ -1,0 +1,53 @@
+.startBtn {
+  background-color: #1bd730;
+  border: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  padding-left: 16px;
+  display: inline-flex;
+  gap: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.25s ease opacity;
+  margin-right: 5px;
+  &:active {
+    opacity: 0.5;
+  }
+  img {
+    filter: invert(1);
+    width: 20px;
+  }
+}
+
+.moveBtn {
+  background-color: rgb(112 176 255);
+}
+
+.cancelBtn {
+  background-color: rgb(255 100 100);
+  img {
+    filter: inherit !important;
+  }
+}
+
+.changeBtn {
+  background-color: rgb(64, 117, 182);
+  img {
+    filter: inherit !important;
+  }
+}
+
+.small {
+  font-size: 14px;
+  img {
+    width: 14px;
+  }
+}
+
+.big {
+  padding: 20px 24px;
+}

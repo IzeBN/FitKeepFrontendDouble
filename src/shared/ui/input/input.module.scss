@@ -1,0 +1,169 @@
+.root {
+  width: 100%;
+  outline: none !important;
+}
+
+.container {
+  position: relative;
+  outline: none !important;
+}
+
+.input {
+  width: 100%;
+
+  color: var(--color-black);
+  font-family: Gilroy, sans-serif;
+  font-style: normal;
+  outline: none !important;
+
+  background: var(--color-light);
+  border: 1px solid var(--color-stroke);
+  border-radius: 28px;
+
+  transition: all 0.2s ease;
+
+  &_size-default {
+    height: 56px;
+    padding: 15px 47px 15px 23px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &_size-small {
+    height: 40px;
+    padding: 7px 39px 7px 15px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &::placeholder {
+    color: var(--color-unimportant);
+  }
+
+  &:disabled {
+    color: var(--color-unimportant);
+
+    background: #f9f9fc;
+
+    cursor: not-allowed;
+  }
+
+  &:enabled:hover:not(&_error, &_correct) {
+    border: 1px solid var(--color-unimportant);
+  }
+
+  &:enabled:focus:not(&_error, &_correct) {
+    border: 1px solid var(--color-green);
+  }
+
+  &_correct {
+    background: var(--color-green-light);
+    border: 1px solid var(--color-green);
+  }
+
+  &_error {
+    background: var(--color-red-light);
+    border: 1px solid var(--color-red);
+  }
+}
+
+.label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+
+  color: var(--color-unimportant);
+  font-size: 14px;
+  font-style: normal;
+
+  transform: translateY(-50%);
+
+  transition: font-size 0.2s ease, top 0.3s ease, color 0.3s ease;
+
+  pointer-events: none;
+
+  &_focused {
+    top: 14px;
+
+    color: var(--color-blue);
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &_size-default {
+    right: 24px;
+  }
+
+  &_size-small {
+    right: 16px;
+  }
+}
+
+.supporting-text,
+.error-message {
+  display: block;
+  margin-top: 4px;
+  margin-left: 24px;
+  font-weight: 400;
+  font-size: 12px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  line-height: 14px;
+
+  text-align: start;
+}
+
+.supporting-text {
+  color: var(--color-green);
+}
+
+.error-message {
+  color: var(--color-red);
+}
+
+.icon-eye,
+.icon-eye-closed {
+  width: 16px;
+  height: 16px;
+
+  color: var(--color-unimportant);
+}
+
+.icon-error {
+  width: 14px;
+  height: 14px;
+
+  color: var(--color-red);
+}
+
+.icon-correct {
+  width: 14px;
+  height: 14px;
+
+  color: var(--color-green);
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+
+  color: var(--color-blue);
+
+  &_disabled {
+    color: var(--color-disabled);
+  }
+}

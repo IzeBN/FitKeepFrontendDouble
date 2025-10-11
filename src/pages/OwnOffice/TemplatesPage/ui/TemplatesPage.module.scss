@@ -1,0 +1,139 @@
+.CustomerPage {
+  background-color: #f5f5f5;
+  padding: 20px;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.tabs {
+  ul {
+    background-color: #ebebeb;
+    padding: 12px 0;
+    margin: 14px auto;
+    border-radius: 30px;
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    list-style: none;
+    li {
+      padding: 8px 30px;
+      cursor: pointer;
+      border-radius: 30px;
+      transition: 0.25s ease opacity;
+      &:hover {
+        opacity: 0.6;
+      }
+      &.isActive {
+        background-color: #8e5dfb;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  .logo {
+    width: 150px;
+    height: auto;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Benzin Bold", sans-serif;
+  font-weight: bold;
+}
+
+.customersList {
+  max-width: 400px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 8px 20px;
+
+  .customerItem {
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 14px;
+    transition: 0.25s ease opacity;
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .customerAvatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+      object-fit: cover;
+    }
+
+    .placeholderIcon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #3498db; // Blue for initials
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .customerName {
+      flex-grow: 1;
+      color: #333;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    .notification {
+      background: #9b59b6; // Purple for notifications
+      color: white;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+
+  .navButton {
+    background: #9b59b6; // Purple for the active button
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+
+    &:hover {
+      background: #8e44ad;
+    }
+  }
+}

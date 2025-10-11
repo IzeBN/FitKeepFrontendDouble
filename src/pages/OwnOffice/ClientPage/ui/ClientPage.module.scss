@@ -1,0 +1,244 @@
+.CustomerPage {
+  background-color: #f5f5f5;
+  padding: 20px;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+@font-face {
+  font-family: "Benzin Bold";
+  src: url("../../../../assets/fonts/benzin-bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.sections {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  .section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    transition: 0.25s ease opacity;
+
+    &::active {
+      opacity: 0.8;
+    }
+    &:hover {
+      opacity: 0.6;
+    }
+
+    .sectionTitle {
+      color: #333;
+      font-weight: 500;
+    }
+
+    .sectionSubtitle {
+      color: #666;
+      margin-left: 10px;
+    }
+
+    .sectionIcon {
+      color: #9b59b6;
+      margin-left: 10px;
+    }
+
+    .sectionCount {
+      background: #9b59b6;
+      color: white;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+    }
+
+    .sectionArrow {
+      color: #9b59b6;
+      font-size: 16px;
+    }
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  .logo {
+    width: 150px;
+    height: auto;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Benzin Bold", sans-serif;
+  font-weight: bold;
+}
+
+.customersList {
+  max-width: 400px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+
+  .customerItem {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 14px;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .customerAvatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+      object-fit: cover;
+    }
+
+    .placeholderIcon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #3498db; // Blue for initials
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .customerName {
+      flex-grow: 1;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .notification {
+      background: #9b59b6; // Purple for notifications
+      color: white;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+
+  .navButton {
+    background: #9b59b6; // Purple for the active button
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+
+    &:hover {
+      background: #8e44ad;
+    }
+  }
+}
+
+.halfBlocks {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  &__right {
+    background-color: #fff;
+    text-align: center;
+    span {
+      color: #aab2bd;
+    }
+    h2 {
+      font-size: 46px;
+    }
+  }
+  &__left {
+    color: #fff;
+    background-color: #8e5dfb;
+    h4 {
+      text-align: center;
+    }
+    span {
+      color: #e5daff;
+    }
+  }
+  &__left,
+  &__right {
+    margin: 20px 0;
+    width: 50%;
+    border-radius: 20px;
+    padding: 16px 17px;
+  }
+  .achieve_green {
+    color: #01bb16;
+  }
+}
+
+.progressContainer {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  font-family: "Benzin Bold", sans-serif;
+  font-weight: bold;
+}
+
+.progressCircle {
+  width: 100px;
+  height: 100px;
+  background: conic-gradient(#6b46c1 270deg, #c4a5ff 270deg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.progressCircle::before {
+  content: "";
+  width: 70px;
+  height: 70px;
+  background-color: #9164ff;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.progressText {
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}

@@ -1,0 +1,29 @@
+.root {
+  display: flex;
+  margin: 0 auto;
+  &__circle {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border: 6px solid #24262508;
+    border-radius: 123px;
+  }
+  &__item {
+    padding-right: 16px;
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+  &__done {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #1be231 0%, #1aa32a 100%);
+    border-radius: 123px;
+  }
+}

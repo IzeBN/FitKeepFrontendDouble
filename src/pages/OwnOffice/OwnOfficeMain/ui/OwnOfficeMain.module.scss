@@ -1,0 +1,131 @@
+.OwnOfficeMain {
+  background-color: #f5f5f5;
+  //   min-height: 100vh;
+  padding: 20px;
+  font-family: "SF Pro Display", sans-serif;
+
+  @font-face {
+    font-family: "Benzin Bold";
+    src: url("../../../../assets/fonts/benzin-bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Benzin Bold", sans-serif;
+    font-weight: bold;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    .logo {
+      width: 150px;
+      height: auto;
+    }
+  }
+
+  .dashboard {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+
+    .stats {
+      text-align: left;
+
+      .earned {
+        .label {
+          color: #666;
+          font-size: 14px;
+        }
+
+        .amount {
+          font-size: 40px;
+          font-weight: bold;
+          color: #362f41;
+          display: block;
+          margin: 10px 0;
+        }
+
+        .growth {
+          color: #aab2bd;
+          color: #2ecc71;
+          font-size: 14px;
+          background-color: #f5f7fa;
+          padding: 10px 14px;
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+  .smTitle {
+    font-size: 14px;
+  }
+
+  .sections {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      border: 1px solid #e0e0e0;
+      font-size: 14px;
+      transition: 0.25s ease opacity;
+
+      &::active {
+        opacity: 0.8;
+      }
+      &:hover {
+        opacity: 0.6;
+      }
+
+      .sectionTitle {
+        color: #333;
+        font-weight: 500;
+      }
+
+      .sectionSubtitle {
+        color: #666;
+        margin-left: 10px;
+      }
+
+      .sectionIcon {
+        color: #9b59b6;
+        margin-left: 10px;
+      }
+
+      .sectionCount {
+        background: #9b59b6;
+        color: white;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+      }
+
+      .sectionArrow {
+        color: #9b59b6;
+        font-size: 16px;
+      }
+    }
+  }
+}

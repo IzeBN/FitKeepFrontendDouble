@@ -1,0 +1,86 @@
+.modal {
+  background-color: #eaeaea;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 12001;
+  width: 95%;
+  max-width: 400px;
+  transform: scale(0.1);
+  opacity: 0.3;
+  transition: 0.3s ease transform, 0.3s ease opacity;
+  pointer-events: none;
+  width: 100%;
+  bottom: 111px;
+  position: fixed;
+  z-index: 99;
+  border-radius: 28px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  &.active {
+    transform: scale(1);
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+.title {
+  font-size: 18px;
+  margin-bottom: 16px;
+  margin-top: 6px;
+  color: #fff;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.closeButton,
+.openButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 30px;
+    margin-right: 8px;
+    filter: invert(1);
+  }
+}
+
+.closeButton {
+  background-color: #b64e3d;
+  color: #fff;
+  img {
+    width: 16px;
+    margin-right: 0;
+  }
+}
+
+.openButton {
+  background-color: #58ace4;
+  color: #fff;
+}
+
+.closeButton:hover {
+  background-color: #c0392b;
+}
+
+.openButton:hover {
+  background-color: #2980b9;
+}
+
+.restartButton {
+  background-color: #57b63d;
+  &:hover {
+    background-color: #2e6d2d;
+  }
+}

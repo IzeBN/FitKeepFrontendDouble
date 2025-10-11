@@ -1,0 +1,36 @@
+.trainsEmpty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  opacity: 0.8;
+  gap: 6px;
+  height: 400px;
+  button {
+    background-color: rgb(132, 203, 26);
+    color: #fff;
+    border-color: transparent;
+    border: none;
+    padding: 14px 6px;
+    max-width: 240px;
+    width: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.25s ease opacity;
+    border-radius: 30px;
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.8;
+    }
+  }
+  &__text {
+    display: flex;
+  }
+  img {
+    width: 40px;
+    object-fit: contain;
+  }
+}

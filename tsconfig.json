@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"],
+      "@components/*": ["./components/*"],
+      "@widgets/*": ["./widgets/*"],
+      "@shared/*": ["./shared/*"],
+      "@features/*": ["./features/*"],
+      "@entities/*": ["./entities/*"],
+      "@app/*": ["./app/*"]
+    }
+  },
+  "include": [
+    "src",
+    "telegram.d.ts",
+    "src/widgets/adaptive-attached-menu/ui/.tsx"
+  ]
+}

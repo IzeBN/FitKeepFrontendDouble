@@ -1,0 +1,151 @@
+.sliderWrapper {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.sliderContainer {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  margin: 15px 0;
+}
+
+.sliderContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.slide {
+  scroll-snap-align: start;
+  min-width: 320px;
+  background-color: #efedee;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 380px) {
+    min-width: 290px;
+  }
+}
+
+.image {
+  border-radius: 8px;
+  object-fit: cover;
+  height: 145px;
+}
+
+.title {
+  margin-top: 12px;
+  font-size: 1.1rem;
+  color: #1c1c1e;
+  @media (max-width: 380px) {
+    font-size: 1rem;
+  }
+}
+
+.description {
+  margin-bottom: 8px;
+  color: #362f41;
+}
+
+.tags {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.tag {
+  background-color: #e6e9ed;
+  color: #1c1c1e;
+  padding: 4px 3px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  width: 49%;
+  display: flex;
+  align-items: center;
+  @media (max-width: 380px) {
+    font-size: 0.7rem;
+  }
+}
+
+.chooseButton {
+  margin-top: auto;
+  background-color: #01bb16;
+  color: white;
+  border: none;
+  padding: 16px 12px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 16px;
+  width: 100%;
+  svg {
+    width: 22px;
+  }
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.nextButton {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #01bb16;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.nextButton:active,
+.chooseButton:active {
+  background-color: #fff;
+  color: #01bb16;
+  svg {
+    stroke: #01bb16;
+  }
+}
+
+.nextButton svg {
+  stroke: white;
+}
+
+.trunky_description {
+  color: #8a8a8a;
+  font-size: 14px;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.masked {
+  max-height: 4.5em;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
+
+.expanded {
+  max-height: none;
+  mask-image: none;
+  -webkit-mask-image: none;
+  overflow: visible;
+}
+

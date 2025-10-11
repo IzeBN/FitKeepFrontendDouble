@@ -1,0 +1,247 @@
+.container {
+  min-height: 100vh;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.timeAndUser {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.time {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+.userIcon {
+  font-size: 16px;
+}
+
+.statusBar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.signal, .wifi {
+  font-size: 14px;
+}
+
+.battery {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.batteryIcon {
+  font-size: 16px;
+}
+
+.backArrow {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  z-index: 10;
+}
+
+.backButton {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #000;
+  padding: 8px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 100px 20px 30px 20px;
+  line-height: 1.2;
+  color: #000;
+}
+
+.testimonialCard {
+  background: white;
+  border-radius: 20px;
+  margin: 0 20px 30px 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.testimonialImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.durationBanner {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #4CAF50;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  padding: 20px;
+}
+
+.star {
+  font-size: 20px;
+}
+
+.testimonialText {
+  padding: 0 20px 30px 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  text-align: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: #E0E0E0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.activeDot {
+  background: #4CAF50;
+}
+
+.nextButton {
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 40px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nextButton:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+.nextButton:active {
+  transform: translateY(0);
+}
+
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.navButton:hover {
+  background: rgba(0, 0, 0, 0.7);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.navButton:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+// Адаптивность для мобильных устройств
+@media (max-width: 480px) {
+  .title {
+    font-size: 20px;
+    margin: 80px 15px 20px 15px;
+  }
+  
+  .testimonialCard {
+    margin: 0 15px 20px 15px;
+  }
+  
+  .imageContainer {
+    height: 250px;
+  }
+  
+  .testimonialText {
+    padding: 0 15px 20px 15px;
+    font-size: 14px;
+  }
+  
+  .nextButton {
+    margin: 15px;
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+  
+  .navButton {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,1 @@
+export { TestimonialsWidget } from "./TestimonialsWidget";

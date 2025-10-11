@@ -1,0 +1,14 @@
+export { MorePage } from "./MorePage/MorePage";
+export { TrainsPage } from "./TrainsPage/TrainsPage";
+export { TrainPage } from "./TrainPage/TrainPage";
+export { HomePage } from "./HomePage/HomePage";
+export { EquipmentsPage } from "./EquipmentsPage/EquipmentsPage";
+export { OwnOfficeMain } from "./OwnOffice/OwnOfficeMain";
+export { CustomersPage } from "./OwnOffice/CustomersPage";
+export { ProgressPage } from "./ProgressPage";
+export { StatsPage } from "./OwnOffice/StatsPage";
+export { RecomendTemplatePage } from "./RecomendTemplatePage";
+export { RecomendTrainPage } from "./RecomendTrainPage";
+export { DashboardPage } from "./DashboardPage";
+export { SubscriptionPage } from "./SubscriptionPage/";
+export { PurchasePage } from "./PurchasePage/";

@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "title": "Inventar",
+    "title_photo": "https://api.telegram.org/file/bot7398928160:AAHnr1gSO9SYT1G5FKPO1j2jKXKRV6L1jJ4/photos/file_2.jpg",
+    "details": [
+      {
+        "id": 4,
+        "equipment_id": 1,
+        "title_photo": "https://api.telegram.org/file/bot7398928160:AAHnr1gSO9SYT1G5FKPO1j2jKXKRV6L1jJ4/photos/file_6.jpg",
+        "name": "Скамья",
+        "type": "inventory",
+        "options": null
+      },
+      {
+        "id": 5,
+        "equipment_id": 1,
+        "title_photo": "https://api.telegram.org/file/bot7398928160:AAHnr1gSO9SYT1G5FKPO1j2jKXKRV6L1jJ4/photos/file_7.jpg",
+        "name": "Степ",
+        "type": "inventory",
+        "options": null
+      },
+      {
+        "id": 6,
+        "equipment_id": 1,
+        "title_photo": "https://api.telegram.org/file/bot7398928160:AAHnr1gSO9SYT1G5FKPO1j2jKXKRV6L1jJ4/photos/file_8.jpg",
+        "name": "Брусья",
+        "type": "inventory",
+        "options": null
+      },
+      {
+        "id": 7,
+        "equipment_id": 1,
+        "title_photo": "https://api.telegram.org/file/bot7398928160:AAHnr1gSO9SYT1G5FKPO1j2jKXKRV6L1jJ4/photos/file_9.jpg",
+        "name": "Скакалка",
+        "type": "inventory",
+        "options": null
+      },
+      {
+        "id": 8,
+        "equipment_id": 1,
+        "title_photo": "https://api.telegram.org/file/bot7398928160:AAHnr1gSO9SYT1G5FKPO1j2jKXKRV6L1jJ4/photos/file_10.jpg",
+        "name": "Наклонная скамья",
+        "type": "inventory",
+        "options": null
+      },
+      {
+        "id": 9,
+        "equipment_id": 1,
+        "title_photo": "https://api.telegram.org/file/bot7398928160:AAHnr1gSO9SYT1G5FKPO1j2jKXKRV6L1jJ4/photos/file_11.jpg",
+        "name": "Фитбол",
+        "type": "inventory",
+        "options": null
+      },
+      {
+        "id": 10,
+        "equipment_id": 1,
+        "title_photo": "https://api.telegram.org/file/bot7398928160:AAHnr1gSO9SYT1G5FKPO1j2jKXKRV6L1jJ4/photos/file_12.jpg",
+        "name": "Коврик",
+        "type": "inventory",
+        "options": null
+      },
+      {
+        "id": 11,
+        "equipment_id": 1,
+        "title_photo": "https://api.telegram.org/file/bot7398928160:AAHnr1gSO9SYT1G5FKPO1j2jKXKRV6L1jJ4/photos/file_13.jpg",
+        "name": "Турник",
+        "type": "inventory",
+        "options": null
+      },
+      {
+        "id": 12,
+        "equipment_id": 1,
+        "title_photo": "https://api.telegram.org/file/bot7398928160:AAHnr1gSO9SYT1G5FKPO1j2jKXKRV6L1jJ4/photos/file_14.jpg",
+        "name": "Римский стул",
+        "type": "inventory",
+        "options": null
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Trenazhor",
+    "title_photo": "https://api.telegram.org/file/bot7398928160:AAHnr1gSO9SYT1G5FKPO1j2jKXKRV6L1jJ4/photos/file_4.jpg",
+    "details": [
+      {
+        "id": 13,
+        "equipment_id": 2,
+        "title_photo": "https://api.telegram.org/file/bot7398928160:AAHnr1gSO9SYT1G5FKPO1j2jKXKRV6L1jJ4/photos/file_15.jpg",
+        "name": "Горизонтальная тяга",
+        "type": "step",
+        "options": null
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Shtangy",
+    "title_photo": "https://api.telegram.org/file/bot7398928160:AAHnr1gSO9SYT1G5FKPO1j2jKXKRV6L1jJ4/photos/file_5.jpg",
+    "details": [
+      {
+        "id": 2,
+        "equipment_id": 3,
+        "title_photo": null,
+        "name": "Какие panckaks есть в вашем зале?",
+        "type": "pancakes",
+        "options": [
+          {
+            "id": 34,
+            "equipment_id": 3,
+            "detail_id": 2,
+            "value": "2.500 кг"
+          },
+          {
+            "id": 33,
+            "equipment_id": 3,
+            "detail_id": 2,
+            "value": "1.25 кг"
+          },
+          {
+            "id": 35,
+            "equipment_id": 3,
+            "detail_id": 2,
+            "value": "5 кг"
+          },
+          {
+            "id": 36,
+            "equipment_id": 3,
+            "detail_id": 2,
+            "value": "10 кг"
+          },
+          {
+            "id": 37,
+            "equipment_id": 3,
+            "detail_id": 2,
+            "value": "15 кг"
+          },
+          {
+            "id": 38,
+            "equipment_id": 3,
+            "detail_id": 2,
+            "value": "2000 кг"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "equipment_id": 3,
+        "title_photo": null,
+        "name": "Какие gryphs есть в вашем зале?",
+        "type": "griphs",
+        "options": [
+          {
+            "id": 39,
+            "equipment_id": 3,
+            "detail_id": 3,
+            "value": "20 кг"
+          },
+          {
+            "id": 40,
+            "equipment_id": 3,
+            "detail_id": 3,
+            "value": "10 кг"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Gantelly",
+    "title_photo": "https://api.telegram.org/file/bot7398928160:AAHnr1gSO9SYT1G5FKPO1j2jKXKRV6L1jJ4/photos/file_3.jpg",
+    "details": [
+      {
+        "id": 1,
+        "equipment_id": 4,
+        "title_photo": null,
+        "name": "Какие гантели есть в вашем зале? :///",
+        "type": "weights",
+        "options": [
+          {
+            "id": 16,
+            "equipment_id": 4,
+            "detail_id": 1,
+            "value": "1000 кг"
+          },
+          {
+            "id": 17,
+            "equipment_id": 4,
+            "detail_id": 1,
+            "value": "2 кг"
+          },
+          {
+            "id": 18,
+            "equipment_id": 4,
+            "detail_id": 1,
+            "value": "2.5 кг"
+          },
+          {
+            "id": 19,
+            "equipment_id": 4,
+            "detail_id": 1,
+            "value": "4 кг"
+          },
+          {
+            "id": 20,
+            "equipment_id": 4,
+            "detail_id": 1,
+            "value": "5 кг"
+          },
+          {
+            "id": 21,
+            "equipment_id": 4,
+            "detail_id": 1,
+            "value": "6 кг"
+          },
+          {
+            "id": 22,
+            "equipment_id": 4,
+            "detail_id": 1,
+            "value": "7 кг"
+          },
+          {
+            "id": 23,
+            "equipment_id": 4,
+            "detail_id": 1,
+            "value": "7.5 кг"
+          },
+          {
+            "id": 24,
+            "equipment_id": 4,
+            "detail_id": 1,
+            "value": "8 кг"
+          },
+          {
+            "id": 25,
+            "equipment_id": 4,
+            "detail_id": 1,
+            "value": "8.5 кг"
+          },
+          {
+            "id": 26,
+            "equipment_id": 4,
+            "detail_id": 1,
+            "value": "9 кг"
+          },
+          {
+            "id": 27,
+            "equipment_id": 4,
+            "detail_id": 1,
+            "value": "10 кг"
+          },
+          {
+            "id": 28,
+            "equipment_id": 4,
+            "detail_id": 1,
+            "value": "11 кг"
+          },
+          {
+            "id": 29,
+            "equipment_id": 4,
+            "detail_id": 1,
+            "value": "12 кг"
+          },
+          {
+            "id": 30,
+            "equipment_id": 4,
+            "detail_id": 1,
+            "value": "12.5 кг"
+          }
+        ]
+      }
+    ]
+  }
+]

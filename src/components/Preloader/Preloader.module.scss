@@ -1,0 +1,24 @@
+.root {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // opacity: 0.9;
+  z-index: 10009!important;
+  img {
+    width: 305px;
+    // opacity: 0.6;
+  }
+}
+
+.cat {
+  width: 135px!important;
+  opacity: 0.6;
+}

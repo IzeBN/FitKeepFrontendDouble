@@ -1,0 +1,12 @@
+.text {
+    fill: #000;
+    font-size: 13px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    /* Можно добавить тень для читаемости */
+    /* text-shadow: 0 0 2px rgba(255, 255, 255, 0.7); */
+    pointer-events: none; // чтобы текст не мешал взаимодействию
+}
+
+.tspan {
+    /* Можно задать межстрочный отступ, но лучше управлять через dy в JSX */
+}

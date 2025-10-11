@@ -1,0 +1,88 @@
+.container {
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+.backLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    width: 100%;
+
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.title {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.filter {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.select {
+    padding: 6px 12px;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.loading {
+    padding: 2rem;
+    font-size: 1rem;
+}
+
+.stepsBlock {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.stepsTitle {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.stepsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.stepItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.stepName {
+    font-weight: 500;
+    max-width: 70%;
+    word-break: break-word;
+}
+
+.stepCount {
+    font-weight: 400;
+    color: #666;
+}
+
+.noData {
+    font-size: 0.95rem;
+    color: #888;
+    margin-top: 1rem;
+}

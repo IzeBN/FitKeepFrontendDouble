@@ -1,0 +1,11 @@
+.root {
+  background-color: #f3f1f2;
+  border-radius: 30px;
+  padding: 18px 20px;
+  &__green_plaque {
+    background-color: #e0ede0;
+    border-radius: 12px;
+    border-bottom-right-radius: 0;
+    padding: 14px 13px;
+  }
+}

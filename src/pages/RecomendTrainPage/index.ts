@@ -1,0 +1,1 @@
+export { RecomendTrainPage } from "./RecomendTrainPage";

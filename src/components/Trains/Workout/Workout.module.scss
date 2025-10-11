@@ -1,0 +1,42 @@
+.root {
+  margin: 5px 0;
+  color: inherit;
+  transition: 0.25s ease;
+  display: inline-block;
+  cursor: pointer;
+  &:active {
+    opacity: 0.6;
+  }
+  &__text {
+    padding-top: 10px;
+    font-size: 15px;
+  }
+  &__content {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    color: #363434;
+  }
+  &__picture {
+    min-width: 152px;
+    height: 125px;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+    margin-top: 20px;
+    img {
+      width: 130%;
+      height: 130%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+  &__title {
+    font-family: "BenzinBold", sans-serif;
+    font-weight: 900;
+    font-size: 17px;
+  }
+}

@@ -1,0 +1,24 @@
+.root {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4%;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 46%;
+    border: 1px solid #eaeaea;
+    background-color: #fbfbfb;
+    border-radius: 20px;
+    margin: 10px 0;
+    text-align: center;
+    padding: 20px 0;
+  }
+  img {
+    height: 80px;
+    width: 70px;
+    object-fit: contain;
+  }
+}
